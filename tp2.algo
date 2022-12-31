@@ -1,0 +1,30 @@
+algo som
+VAR 
+    somme ,i ,j : INTEGER
+    tab1= ARRAY_OF INTEGER[N]
+    tab2 = ARRAY_OF INTEGER[M]
+BEGIN
+    tab1:= [3,1,7,9]
+    tab2:= [2,4,9,1,3]
+    FOR i FROM 1 TO tab1.length STEP 1 DO 
+        j:=1
+        WHILE ( J < tab2.length) DO
+            IF ( tab1[i] <> tab2[j]) THEN
+                somme= tab1[i]
+                BREAK
+            END_IF
+            J=J+1
+        END_WHILE
+    END_FOR
+    FOR j FROM 1 TO tab2.length STEP 1 DO 
+            i:=1
+        WHILE ( i < tab1.length) DO
+            IF ( tab2[j] <> tab1[i]) THEN
+                somme= tab2[j]
+                BREAK
+            END_IF
+            i=i+1
+        END_WHILE
+    END_FOR
+    READ(somme)
+END

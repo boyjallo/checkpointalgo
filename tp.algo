@@ -1,0 +1,13 @@
+algo phrase
+VAR phrase:= STRING;
+nmbredemot,nmbredevoyel,i:= INTEGER;
+FOR i FROM 0 TO phrase.lenght DO
+    IF (phrase[i]=" ")
+    nmbredemot =nmbredemot +1;
+    END IF
+    IF (phrase[i] ="a"||phrase[i]"e"||phrase[i]"i"||phrase[i]"o"||phrase[i]"u")
+    nmbredevoyel =  nmbredevoyel+1
+    END IF
+END_FOR
+Write nmbredemot
+Write nmbredevoyel
